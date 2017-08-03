@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.example.android.popularmoviesstageone"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+
+        debug {
+            buildConfigField "String", "api_key", '"19f0630ffb27449aaed65e56c746521f"'
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+ext{
+    supportlibversion = "25.2.0"
+    picassoversion="2.5.2"
+    retrofitversion = "2.3.0"
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    // support libs
+    compile 'com.android.support:appcompat-v7:'+supportlibversion
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:recyclerview-v7:'+supportlibversion
+    compile 'com.android.support:appcompat-v7:'+supportlibversion
+    compile 'com.android.support:design:'+supportlibversion
+
+
+    // used for image caching and downloading
+    compile 'com.squareup.picasso:picasso:'+picassoversion
+
+
+
+    // used for networking
+
+    compile 'com.squareup.retrofit2:retrofit:'+retrofitversion
+    compile 'com.squareup.retrofit2:converter-gson:'+retrofitversion
+
+    // butterknife - view injection
+    compile 'com.jakewharton:butterknife:8.6.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+
+
+}

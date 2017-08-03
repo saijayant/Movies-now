@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/iv_trailer_thumb"
+        android:layout_margin="10dp"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ivPlay"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_trailer_thumb"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_trailer_thumb"
+        app:layout_constraintRight_toRightOf="@+id/iv_trailer_thumb"
+        app:layout_constraintTop_toTopOf="@+id/iv_trailer_thumb"
+        android:src="@drawable/ic_play_circle_outline_black_24dp"
+        app:layout_constraintVertical_bias="1.0"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:background="@android:color/white"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="bottom|end|center_vertical"
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:text="Share"
+        android:paddingRight="10dp"
+        app:layout_constraintStart_toStartOf="@id/iv_trailer_thumb"
+        app:layout_constraintEnd_toEndOf="@+id/iv_trailer_thumb"
+        app:layout_constraintRight_toRightOf="@+id/iv_trailer_thumb"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_trailer_thumb"
+        app:layout_constraintTop_toBottomOf="@+id/iv_trailer_thumb"
+      />
+</android.support.constraint.ConstraintLayout>

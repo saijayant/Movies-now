@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PopularMoviesStageTwo</string>
+    <string name="error_message">
+        An error has occurred. Please try again by clicking REFRESH
+    </string>
+    <string name="no_internet">No Internet Connection!</string>
+    <string name="top_rated">Top Rated </string>
+    <string name="popular_movies">Popular </string>
+    <string name="favorites">Favorites</string>
+    <string name="overview">OVERVIEW</string>
+    <string name="trailers">TRAILERS</string>
+    <string name="reviews">REVIEWS</string>
+    <string name="added_to_favorites">Added to favorites</string>
+    <string name="removed_from_favs">Removed from favorites</string>
+    <string name="favorites_msg">Movies you added to favorites will be display here . \n Go ahead and add some movies to favorites</string>
+    <string name="no_reviews">No reviews available for this movie</string>
+</resources>
